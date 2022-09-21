@@ -1,0 +1,39 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/nestjs-sam/src",
+  "monorepo": true,
+  "root": "apps/nestjs-sam",
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "apps/nestjs-sam/tsconfig.app.json"
+  },
+  "projects": {
+    "nestjs-sam": {
+      "type": "application",
+      "root": "apps/nestjs-sam",
+      "entryFile": "main",
+      "sourceRoot": "apps/nestjs-sam/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nestjs-sam/tsconfig.app.json"
+      }
+    },
+    "hello-world": {
+      "type": "application",
+      "root": "apps/hello-world",
+      "entryFile": "main",
+      "sourceRoot": "apps/hello-world/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/hello-world/tsconfig.app.json"
+      }
+    },
+    "data-access": {
+      "type": "library",
+      "root": "libs/data-access",
+      "entryFile": "index",
+      "sourceRoot": "libs/data-access/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/data-access/tsconfig.lib.json"
+      }
+    }
+  }
+}

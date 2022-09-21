@@ -1,0 +1,15 @@
+version: '3.8'
+
+services: 
+  dynamodb: 
+    image: amazon/dynamodb-local
+    ports:
+      - 8001:8000
+    # volumes:
+    #   - ./volumes/dynamodb:/home/dynamodblocal
+    networks:
+      - backend
+
+networks:
+  backend: 
+    name: nestjs-sam-network
