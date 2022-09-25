@@ -34,6 +34,24 @@
       "compilerOptions": {
         "tsConfigPath": "libs/data-access/tsconfig.lib.json"
       }
+    },
+    "create-setting-group": {
+      "type": "application",
+      "root": "apps/create-setting-group",
+      "entryFile": "main",
+      "sourceRoot": "apps/create-setting-group/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/create-setting-group/tsconfig.app.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
     }
   }
 }

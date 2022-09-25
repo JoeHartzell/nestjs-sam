@@ -13,6 +13,7 @@ specifiers:
   '@types/supertest': ^2.0.11
   '@typescript-eslint/eslint-plugin': ^4.28.2
   '@typescript-eslint/parser': ^4.28.2
+  aws-embedded-metrics: ^4.0.0
   dynamoose: ^3.1.0
   eslint: ^7.30.0
   eslint-config-prettier: ^8.3.0
@@ -32,6 +33,7 @@ specifiers:
 dependencies:
   '@nestjs/common': 9.0.11_j5hagqx4mwzscud4kyjdvubauy
   '@nestjs/core': 9.0.11_3mdbamkp7cmelffjfexsjo7tau
+  aws-embedded-metrics: 4.0.0
   dynamoose: 3.1.0
   reflect-metadata: 0.1.13
   rimraf: 3.0.2
@@ -1179,6 +1181,10 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
+  /@datastructures-js/heap/4.1.2:
+    resolution: {integrity: sha512-Dl6MPPVXxzWsSQxIaV0sOpAx/B8r7RYUO5/GWe7GhG9v9P4QfZ1cgPSq+SoF0QJFhu9G9TmtPfRLHPWzL73GpQ==}
+    dev: false
+
   /@eslint/eslintrc/0.4.3:
     resolution: {integrity: sha512-J6KFFz5QCYUJq3pf0mjEcCJVERbzv71PUIDczuh9JkwGEzced6CO5ADLHB1rbf/+oPBtoPfMYNOpGDzCANlbXw==}
     engines: {node: ^10.12.0 || >=12.0.0}
@@ -1841,6 +1847,10 @@ packages:
       '@types/superagent': 4.1.15
     dev: true
 
+  /@types/validator/13.7.7:
+    resolution: {integrity: sha512-jiEw2kTUJ8Jsh4A1K4b5Pkjj9Xz6FktLLOQ36ZVLRkmxFbpTvAV2VRoKMojz8UlZxNg/2dZqzpigH4JYn1bkQg==}
+    dev: false
+
   /@types/yargs-parser/21.0.0:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: true
@@ -2234,6 +2244,15 @@ packages:
   /asynckit/0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: true
+
+  /aws-embedded-metrics/4.0.0:
+    resolution: {integrity: sha512-Bh5A439399uLT1Bed/uvPRc/zdyDg49n8lR6AKCUbb4lSl8t73FksRTsaJOCrnpb13/xhcPbMRYXayeD/oGbhg==}
+    engines: {node: '>=10.0.0'}
+    dependencies:
+      '@datastructures-js/heap': 4.1.2
+      '@types/validator': 13.7.7
+      validator: 13.7.0
+    dev: false
 
   /babel-jest/27.5.1_@babel+core@7.19.1:
     resolution: {integrity: sha512-cdQ5dXjGRd0IBRATiQ4mZGlGlRE8kJpjPOixdNRdT+m3UcNqmYWN6rK6nvtXYfY3D76cb8s/O1Ss8ea24PIwcg==}
@@ -5344,6 +5363,11 @@ packages:
       convert-source-map: 1.8.0
       source-map: 0.7.4
     dev: true
+
+  /validator/13.7.0:
+    resolution: {integrity: sha512-nYXQLCBkpJ8X6ltALua9dRrZDHVYxjJ1wgskNt1lH9fzGjs3tgojGSCBjmEPwkWS1y29+DrizMTW19Pr9uB2nw==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /w3c-hr-time/1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
